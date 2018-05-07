@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <h4 ion-text padding>Introduzca sus datos:</h4>
+
+  <ion-item>
+    <ion-label floating>Correo electrónico</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col width-100 style="text-align: center">
+      <button ion-button padding clear icon-right margin>
+        Olvidé mi contraseña
+        <ion-icon name="sad"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+
+  <button ion-button color="primary" block icon-left (click)="navCtrl.push('LoginPage')">
+    <ion-icon name="log-in"></ion-icon>
+    Iniciar sesión
+  </button>
+
+</ion-content>

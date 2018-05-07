@@ -1,0 +1,33 @@
+<ion-header>
+
+  <!-- <ion-navbar color="primary">
+    <ion-title>Bienvenido a MIB</ion-title>
+  </ion-navbar> -->
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h1 ion-text text-center style="margin-top: 60px">¡Bienvenido a MIB!</h1>
+
+  <ion-grid style="height: 50%">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <img class="circle-pic" width="400" height="400" src="../../assets/imgs/babylogo.jpg">
+    </ion-row>
+  </ion-grid>
+
+  <button ion-button color="primary" block icon-left (click)="navCtrl.push('LoginPage')">
+    <ion-icon name="log-in"></ion-icon>
+    Iniciar sesión
+  </button>
+
+  <p text-center style="padding: 3px">- o -</p>
+
+  <button ion-button color="primary" block icon-left (click)="navCtrl.push('RegisterPage')">
+    <ion-icon name="person-add"></ion-icon>
+    Registrarse
+  </button>
+
+  
+</ion-content>
