@@ -14,6 +14,53 @@
 
 
 <ion-content padding>
+  <h4 ion-text text-center padding>BIENVENIDO</h4>
+  <h5 ion-text text-center padding>Gracias por adquirir MIB, ingresa los datos del bebé</h5>
+  <ion-item>
+    <ion-label floating>ID del monitor</ion-label>
+    <ion-input  ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Nombre</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Fecha de nacimiento</ion-label>
+    <ion-input type="date"></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col width-50>
+      <ion-item>
+          <ion-label floating>Sexo</ion-label>
+          <ion-select [(ngModel)]="sexo">
+            <ion-option value="f">Femenino</ion-option>
+            <ion-option value="m">Masculino</ion-option>
+          </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-list>
+    <ion-list-header>  Datos escenciales  </ion-list-header>
+  <ion-item>
+    <ion-label >Es prematuro</ion-label>
+    <ion-checkbox [(ngModel)]="prematuro"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label >Hubo complicaciones al nacer</ion-label>
+    <ion-checkbox [(ngModel)]="prematuro"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label >Nació por cesarea</ion-label>
+    <ion-checkbox [(ngModel)]="prematuro"></ion-checkbox>
+  </ion-item>
+  </ion-list>
+
+  <button ion-button color="primary" block icon-left (click)="navCtrl.push('PrincipalPage')" >
+    <ion-icon name="person-add"></ion-icon>
+    Guardar
+  </button>
+  <!-- botonoes -->
   <button ion-button color="primary" block icon-left (click)="navCtrl.push('PrincipalPage')">
     <ion-icon name="log-in"></ion-icon>
     prncippal

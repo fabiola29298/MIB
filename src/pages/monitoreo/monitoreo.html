@@ -1,18 +1,49 @@
-<!--
-  Generated template for the MonitoreoPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>monitoreo</ion-title>
+    <ion-title>Monitereo de Juan</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <!-- <h4 ion-text text-center >Monitereo de Juan</h4> -->
+  <h5 ion-text text-center  color="primary" >ESTADO ACTUAL</h5>
+  <h6 ion-text text-center >Última actualización hace 2min</h6>
+  <ion-item>
+      <ion-icon name="thermometer" item-start></ion-icon>
+      Temperatura
+      <ion-badge item-end>36 C</ion-badge>
+  </ion-item>
+  <ion-item>
+      <ion-icon name="heart" item-start></ion-icon>
+      Frecuencia cardiaca
+      <ion-badge item-end>36 </ion-badge>
+  </ion-item>
+    <h5 ion-text text-center color="primary" >GRÁFICO</h5>
+    <ion-grid style="height: 50%">
+      <ion-row justify-content-center align-items-center style="height: 100%">
+        <img class="circle-pic" width="250" height="250" src="../../assets/imgs/grafico.png">
+      </ion-row>
+    </ion-grid>
+ <ion-list>
+      <ion-item>
+        <ion-label fixed>Fecha inicio </ion-label>
+        <ion-input type="text" value="" placeholder="01-02-2018"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Fecha final </ion-label>
+        <ion-input type="text" value="" placeholder="07-02-2018"></ion-input>
+      </ion-item>
+  </ion-list>
+  <button ion-button color="primary" block icon-left (click)="navCtrl.push('TablaparametrosPage')">
+    <ion-icon name="log-in"></ion-icon>
+    tablaparametros
+  </button>
+  <button ion-button color="primary" block icon-left (click)="navCtrl.push('ProblemassaludPage')">
+    <ion-icon name="log-in"></ion-icon>
+    problemas de salud
+  </button>
 </ion-content>

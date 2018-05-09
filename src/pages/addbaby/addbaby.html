@@ -14,6 +14,23 @@
 
 
 <ion-content padding>
+  <h5> SELECCIONAR MONITOR DE BEBÉ</h5>
+      <ion-label block text-justify text-wrap text-small padding>
+        Si es la primera vez que conectaras el monitor, entonces click en el botón "Primera vez"</ion-label>
+    <button ion-button color="primary" block icon-left (click)="navCtrl.setRoot('RegisterbabyPage')">
+      <ion-icon name="person-add"></ion-icon>
+      Primera vez
+    </button>
+    <ion-label block text-justify text-wrap text-small padding>
+       Si ya ingresaste los datos del bebé, entonces ingresa el id del monitor a buscar</ion-label>
+    <ion-item>
+      <ion-label floating>ID monitor</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <button ion-button icon-left (click)="navCtrl.push('MonitoreoPage')">
+  <ion-icon name="search"></ion-icon>
+  Buscar
+  </button>
   <button ion-button color="primary" block icon-left (click)="navCtrl.push('RegisterbabyPage')">
     <ion-icon name="log-in"></ion-icon>
     registrar babe

@@ -7,7 +7,7 @@ import { RegisterbabyPage } from './registerbaby';
     RegisterbabyPage,
   ],
   imports: [
-    IonicPageModule.forChild(RegisterbabyPage),
+    IonicPageModule.forChild(RegisterbabyPage) , 
   ],
 })
 export class RegisterbabyPageModule {}
