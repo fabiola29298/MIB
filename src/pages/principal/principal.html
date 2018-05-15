@@ -31,13 +31,39 @@
   </ion-list>
 
   </ion-card>
-  <ion-card (tap)="tapEvent($event)">
+  <ion-card  >
   <ion-item>
    Cerrar sesion
   </ion-item>
+
 </ion-card>
     <button ion-button color="primary" block icon-left (click)="navCtrl.push('MonitoreoPage')">
       <ion-icon name="log-in"></ion-icon>
       monitoreo
     </button>
+    <!-- list -->
+            <ion-list>
+          <ion-item-sliding #item>
+            <ion-item *ngFor="let lugar of lugares" (click)="irAVistaE()">
+              <h2>{{lugar.nombre}} </h2>
+              <h3>{{lugar.direccion}}</h3>
+              <p> {{lugar.categoria}}</p>
+            </ion-item>
+            <ion-item-options side="left">
+              <button ion-button (click)="favorite(item)">Favorite</button>
+              <button ion-button color="danger" (click)="share(item)">Share</button>
+            </ion-item-options>
+
+            <ion-item-options side="right">
+              <button ion-button (click)="unread(item)">Unread</button>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+
+ <!-- this fab is placed at bottom right -->
+       <ion-fab bottom right >
+         <button ion-fab (click)="iraVistaDetalle()">
+            <ion-icon ios="ios-add" md="md-add"></ion-icon>
+         </button>
+       </ion-fab>
 </ion-content>
