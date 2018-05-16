@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {RegisterbabyPage} from '../registerbaby/registerbaby';
- 
+
 @IonicPage()
 @Component({
   selector: 'page-principal',
@@ -16,15 +15,10 @@ export class PrincipalPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PrincipalPage');
-  }
-  iraVistaDetalle(){
-    // alert('Está funcionando');
-    this.navCtrl.push(RegisterbabyPage, {lugar:{}});
-  }
-  irAVistaE(lugar){
-    this.navCtrl.push(RegisterbabyPage, {lugar:{lugar}});
+
+
+  irMonitoreo(lugar){
+  //  this.navCtrl.push(MonitoreoPage, {lugar:{lugar}});
   }
 
 }

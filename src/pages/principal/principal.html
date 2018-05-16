@@ -1,6 +1,13 @@
 
 <ion-header>
-  <ion-navbar>    <ion-title>principal</ion-title>  </ion-navbar>
+  <ion-navbar color="primary">
+    <ion-title>MIB - Principal</ion-title>
+    <ion-buttons>
+        <button ion-button
+                menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>  </ion-navbar>
 </ion-header>
 
 
@@ -44,7 +51,7 @@
     <!-- list -->
             <ion-list>
           <ion-item-sliding #item>
-            <ion-item *ngFor="let lugar of lugares" (click)="irAVistaE()">
+            <ion-item *ngFor="let lugar of lugares" (click)="irMonitoreo()">
               <h2>{{lugar.nombre}} </h2>
               <h3>{{lugar.direccion}}</h3>
               <p> {{lugar.categoria}}</p>
@@ -62,8 +69,10 @@
 
  <!-- this fab is placed at bottom right -->
        <ion-fab bottom right >
-         <button ion-fab (click)="iraVistaDetalle()">
+         <button ion-fab  (click)="navCtrl.push('RegisterbabyPage')">
             <ion-icon ios="ios-add" md="md-add"></ion-icon>
          </button>
        </ion-fab>
+
+
 </ion-content>

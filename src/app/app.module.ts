@@ -9,27 +9,28 @@ import { MyApp } from './app.component';
 import {AngularFireAuthModule} from "angularfire2/auth";
 import {AngularFireDatabaseModule} from "angularfire2/database";
 import {AngularFireModule} from "angularfire2";
-/*import {AddbabyPage } from '../pages/addbaby/addbaby';
-import { LoginPage} from '../pages/login/login';
-import { MonitoreoPage} from '../pages/monitoreo/monitoreo';
-import {NumberAddPage } from '../pages/number-add/number-add';
-import {PrincipalPage } from '../pages/principal/principal';
-import { ProblemassaludPage} from '../pages/problemassalud/problemassalud';
-import {RegisterPage } from '../pages/register/register';
-import { RegisterbabyPage } from '../pages/registerbaby/registerbaby';
-import { TablaparametrosPage} from '../pages/tablaparametros/tablaparametros';
-
-AddMonitorsPage,
+/*
+p,AddMonitorsPage,
 AddbabyPage,
 LoginPage,
 MonitoreoPage,
 NumberAddPage,
-PrincipalPage,
 ProblemassaludPage,
 RegisterPage,
-RegisterbabyPage,
 TablaparametrosPage
+
+import { LugaresServices } from '../services/lugaresservices';
+import {AddMonitorsPage} from '../pages/add-monitors/add-monitors';
+import {AddbabyPage } from '../pages/addbaby/addbaby';
+import { LoginPage} from '../pages/login/login';
+import { MonitoreoPage} from '../pages/monitoreo/monitoreo';
+import {NumberAddPage } from '../pages/number-add/number-add';
+import { ProblemassaludPage} from '../pages/problemassalud/problemassalud';
+import {RegisterPage } from '../pages/register/register';
+import { TablaparametrosPage} from '../pages/tablaparametros/tablaparametros';
+
 */
+
 export const firebaseConfig = {
   apiKey: "AIzaSyDnQLopzd8oGw3p9CIDTx5Isfo1zcKlr2o",
     authDomain: "enero2017firebase.firebaseapp.com",
@@ -42,10 +43,14 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp
+
+
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: 'Atras'
+    }),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule
@@ -53,6 +58,8 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp
+
+
   ],
   providers: [
     StatusBar,

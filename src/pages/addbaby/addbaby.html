@@ -1,13 +1,15 @@
-<!--
-  Generated template for the AddbabyPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>addbaby</ion-title>
+   
+    <ion-navbar color="primary">
+      <ion-title>Agregar monitor</ion-title>
+      <ion-buttons>
+          <button ion-button
+                  menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -17,7 +19,7 @@
   <h5> SELECCIONAR MONITOR DE BEBÉ</h5>
       <ion-label block text-justify text-wrap text-small padding>
         Si es la primera vez que conectaras el monitor, entonces click en el botón "Primera vez"</ion-label>
-    <button ion-button color="primary" block icon-left (click)="navCtrl.setRoot('RegisterbabyPage')">
+    <button ion-button color="primary" block icon-left (click)="navCtrl.push('RegisterbabyPage')">
       <ion-icon name="person-add"></ion-icon>
       Primera vez
     </button>
@@ -27,12 +29,9 @@
       <ion-label floating>ID monitor</ion-label>
       <ion-input type="number"></ion-input>
     </ion-item>
-    <button ion-button icon-left (click)="navCtrl.push('MonitoreoPage')">
+    <button ion-button icon-left (click)="navCtrl.push('PrincipalPage')">
   <ion-icon name="search"></ion-icon>
   Buscar
   </button>
-  <button ion-button color="primary" block icon-left (click)="navCtrl.push('RegisterbabyPage')">
-    <ion-icon name="log-in"></ion-icon>
-    registrar babe
-  </button>
+  <button ion-button navPop  >    atraz por html   </button>
 </ion-content>

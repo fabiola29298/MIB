@@ -1,21 +1,21 @@
 <ion-header>
 
-    <ion-navbar color="primary">
-      <ion-title>Registrarse</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>REgistro</ion-title> 
     </ion-navbar>
-  
+
   </ion-header>
-  
+
   <ion-content padding>
-  
+
     <h5 ion-text text-center padding>¡Empiece a monitorear el estado de su bebé
       en tiempo real desde su smartphone, tablet o PC!</h5>
-  
+
     <ion-item>
       <ion-label floating>Correo electrónico</ion-label>
       <ion-input type="email"></ion-input>
     </ion-item>
-  
+
     <ion-item>
       <ion-label floating>Nueva contraseña</ion-label>
       <ion-input type="password"></ion-input>
@@ -52,17 +52,16 @@
     </ion-row>
 
     <ion-item>
-      <ion-label block text-justify text-wrap text-small padding>Acepto los Términos y 
-        Condiciones de Uso de la aplicación móvil y los dispositivos físicos 
+      <ion-label block text-justify text-wrap text-small padding>Acepto los Términos y
+        Condiciones de Uso de la aplicación móvil y los dispositivos físicos
         enlazados a esta cuenta.
       </ion-label>
       <ion-checkbox [(ngModel)]="normasAceptadas"></ion-checkbox>
     </ion-item>
-  
+
     <button ion-button color="primary" block icon-left (click)="navCtrl.setRoot('NumberAddPage')">
       <ion-icon name="person-add"></ion-icon>
       Registrarse
     </button>
-  
+
   </ion-content>
-  
