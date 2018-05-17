@@ -11,6 +11,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 export class MyApp {
     login:string = "LoginPage";
     addbaby :string = "AddbabyPage";
+    problemas :string = "ProblemassaludPage";
+    tabla :string = "TablaparametrosPage";
 
   rootPage:string = "WelcomePage";
 
@@ -27,4 +29,11 @@ export class MyApp {
       this.rootPage = pagina;
       this.menuCtrl.close();
   }
+/*  irAtras(){
+    this.navCtrl.pop();
+  }
+  irRoot(){
+    this.navCtrl.popToRoot();
+  }
+  */
 }

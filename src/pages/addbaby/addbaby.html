@@ -1,7 +1,7 @@
 
 <ion-header>
 
-   
+
     <ion-navbar color="primary">
       <ion-title>Agregar monitor</ion-title>
       <ion-buttons>
@@ -16,22 +16,33 @@
 
 
 <ion-content padding>
-  <h5> SELECCIONAR MONITOR DE BEBÉ</h5>
-      <ion-label block text-justify text-wrap text-small padding>
-        Si es la primera vez que conectaras el monitor, entonces click en el botón "Primera vez"</ion-label>
+
+  <!-- <button ion-button navPop  >    atraz por html   </button> -->
+
+
+    <h3 ion-text text-center padding style="margin-top: 20px">¡Cuenta creada con éxito!</h3>
+
+    <h6 ion-text text-center padding>
+      Para empezar a monitorear el estado del bebé, es necesario enlazar
+      el dispositivo monitor con la aplicación. Si usted no cuenta con uno,
+      haga  click en el botón "Primera vez"
+
+      <br><br>Recuerde que <strong>cada bebé debe
+        tener su propio dispositivo de monitoreo.</strong>
+    </h6>
     <button ion-button color="primary" block icon-left (click)="navCtrl.push('RegisterbabyPage')">
       <ion-icon name="person-add"></ion-icon>
       Primera vez
     </button>
-    <ion-label block text-justify text-wrap text-small padding>
-       Si ya ingresaste los datos del bebé, entonces ingresa el id del monitor a buscar</ion-label>
+    <h5 ion-text text-center padding>
+      Si ya ingresaste los datos del bebé, entonces ingresa el id del monitor a buscar
+    </h5>
     <ion-item>
       <ion-label floating>ID monitor</ion-label>
       <ion-input type="number"></ion-input>
     </ion-item>
-    <button ion-button icon-left (click)="navCtrl.push('PrincipalPage')">
-  <ion-icon name="search"></ion-icon>
-  Buscar
-  </button>
-  <button ion-button navPop  >    atraz por html   </button>
+    <button ion-button icon-left  block (click)="navCtrl.push('PrincipalPage')">
+    <ion-icon name="search"></ion-icon>
+    Buscar
+    </button>
 </ion-content>

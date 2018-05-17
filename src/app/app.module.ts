@@ -9,27 +9,7 @@ import { MyApp } from './app.component';
 import {AngularFireAuthModule} from "angularfire2/auth";
 import {AngularFireDatabaseModule} from "angularfire2/database";
 import {AngularFireModule} from "angularfire2";
-/*
-p,AddMonitorsPage,
-AddbabyPage,
-LoginPage,
-MonitoreoPage,
-NumberAddPage,
-ProblemassaludPage,
-RegisterPage,
-TablaparametrosPage
-
-import { LugaresServices } from '../services/lugaresservices';
-import {AddMonitorsPage} from '../pages/add-monitors/add-monitors';
-import {AddbabyPage } from '../pages/addbaby/addbaby';
-import { LoginPage} from '../pages/login/login';
-import { MonitoreoPage} from '../pages/monitoreo/monitoreo';
-import {NumberAddPage } from '../pages/number-add/number-add';
-import { ProblemassaludPage} from '../pages/problemassalud/problemassalud';
-import {RegisterPage } from '../pages/register/register';
-import { TablaparametrosPage} from '../pages/tablaparametros/tablaparametros';
-
-*/
+ 
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDnQLopzd8oGw3p9CIDTx5Isfo1zcKlr2o",

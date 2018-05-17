@@ -1,6 +1,6 @@
 
 <ion-header>
- 
+
     <ion-navbar color="primary">
       <ion-title>Monitor</ion-title>
       <ion-buttons>
@@ -44,12 +44,20 @@
         <ion-input type="text" value="" placeholder="07-02-2018"></ion-input>
       </ion-item>
   </ion-list>
-  <button ion-button color="primary" block icon-left (click)="navCtrl.push('TablaparametrosPage')">
-    <ion-icon name="log-in"></ion-icon>
-    tablaparametros
+  <button ion-button
+          outline
+          full
+          color="primary"
+          (click)="navCtrl.push('TablaparametrosPage')">
+          <ion-icon name="archive"></ion-icon>
+          Tabla de Parametros
   </button>
-  <button ion-button color="primary" block icon-left (click)="navCtrl.push('ProblemassaludPage')">
-    <ion-icon name="log-in"></ion-icon>
-    problemas de salud
+  <button ion-button
+          outline
+          full
+          color="primary"
+          (click)="navCtrl.push('ProblemassaludPage')">
+          <ion-icon name="medkit"></ion-icon>
+          Problemas de Salud
   </button>
 </ion-content>

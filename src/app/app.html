@@ -9,16 +9,20 @@
   <ion-content>
     <ion-list>
       <button ion-item (click)="openPage(login)">
+        <ion-icon name="person-add"></ion-icon>
         Iniciar Sesion
       </button>
-      <button ion-item (click)="openPage(addbaby)">
-        Tabla de parametros
+      <button ion-item (click)="openPage(tabla)">
+        <ion-icon name="archive"></ion-icon>
+        Tabla de Parametros
       </button>
-      <button ion-item (click)="openPage(eventsPage)">
-        Problemas de salud
+      <button ion-item (click)="openPage(problemas)">
+        <ion-icon name="medkit"></ion-icon>
+        Problemas de Salud
       </button>
-      <button ion-item (click)="closeMenu()">
-        Close Menu
+      <button ion-item (click)="openPage(rootPage)">
+          <ion-icon name="log-in"></ion-icon>
+        Ir a la página inicial
       </button>
     </ion-list>
   </ion-content>
